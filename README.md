@@ -8,11 +8,9 @@ NPM INSTALL
 USAGE: 
 
 Post request send EtLyteT PHP script
-
+```
 <?php
-
 $curl = curl_init();
-
 curl_setopt_array($curl, array(
   CURLOPT_PORT => "8080",
   CURLOPT_URL => "http://localhost:8080/v1/send/eth",
@@ -39,7 +37,8 @@ if ($err) {
 } else {
   echo $response;
 }
-
+?>
+```
 OUTPUT:
 
 Hash:"0X0000000000000000000000000000000000000000000000"
